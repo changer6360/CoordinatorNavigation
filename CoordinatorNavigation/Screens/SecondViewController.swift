@@ -8,12 +8,16 @@
 import UIKit
 
 class SecondViewController: UIViewController, Storyboarded {
+    @IBOutlet private var label: UILabel!
+    
+    
     weak var coordinator: MainCoordinator?
+    var selectedProduct = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        label.text = "\(selectedProduct)"
     }
     
 

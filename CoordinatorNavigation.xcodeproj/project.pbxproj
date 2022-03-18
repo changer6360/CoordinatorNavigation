@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6A16A4D27E3C27B0058192D /* FirstScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A16A4C27E3C27B0058192D /* FirstScreenCoordinator.swift */; };
 		F6CB376A27E213670056DD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB376927E213670056DD84 /* AppDelegate.swift */; };
 		F6CB376C27E213670056DD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB376B27E213670056DD84 /* SceneDelegate.swift */; };
 		F6CB376E27E213670056DD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB376D27E213670056DD84 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6A16A4C27E3C27B0058192D /* FirstScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenCoordinator.swift; sourceTree = "<group>"; };
 		F6CB376627E213670056DD84 /* CoordinatorNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CB376927E213670056DD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CB376B27E213670056DD84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6A16A4E27E3C2980058192D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB378127E214750056DD84 /* MainCoordinator.swift */,
+				F6A16A4C27E3C27B0058192D /* FirstScreenCoordinator.swift */,
+				F6CB377D27E213940056DD84 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F6A16A4F27E3C2AF0058192D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB376D27E213670056DD84 /* ViewController.swift */,
+				F6CB378727E216270056DD84 /* SecondViewController.swift */,
+				F6CB378527E216140056DD84 /* FirstViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F6A16A5027E3C2C20058192D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB376B27E213670056DD84 /* SceneDelegate.swift */,
+				F6CB376927E213670056DD84 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		F6CB375D27E213670056DD84 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +97,11 @@
 		F6CB376827E213670056DD84 /* CoordinatorNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				F6CB377D27E213940056DD84 /* Coordinator.swift */,
-				F6CB376927E213670056DD84 /* AppDelegate.swift */,
-				F6CB376B27E213670056DD84 /* SceneDelegate.swift */,
+				F6A16A5027E3C2C20058192D /* App */,
+				F6A16A4F27E3C2AF0058192D /* Screens */,
+				F6A16A4E27E3C2980058192D /* Coordinators */,
 				F6CB377F27E213DF0056DD84 /* Storyboarded.swift */,
-				F6CB376D27E213670056DD84 /* ViewController.swift */,
-				F6CB378527E216140056DD84 /* FirstViewController.swift */,
-				F6CB378727E216270056DD84 /* SecondViewController.swift */,
 				F6CB376F27E213670056DD84 /* Main.storyboard */,
-				F6CB378127E214750056DD84 /* MainCoordinator.swift */,
 				F6CB377227E2136A0056DD84 /* Assets.xcassets */,
 				F6CB377427E2136A0056DD84 /* LaunchScreen.storyboard */,
 				F6CB377727E2136A0056DD84 /* Info.plist */,
@@ -154,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CB378827E216270056DD84 /* SecondViewController.swift in Sources */,
+				F6A16A4D27E3C27B0058192D /* FirstScreenCoordinator.swift in Sources */,
 				F6CB377E27E213940056DD84 /* Coordinator.swift in Sources */,
 				F6CB378227E214750056DD84 /* MainCoordinator.swift in Sources */,
 				F6CB376E27E213670056DD84 /* ViewController.swift in Sources */,

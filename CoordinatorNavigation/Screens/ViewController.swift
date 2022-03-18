@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
+    @IBOutlet var product: UISegmentedControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class ViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func goToSecondVC(_ sender: Any) {
-        coordinator?.openSecondScreen()
+        coordinator?.openSecondScreen(for: product.selectedSegmentIndex)
     }
 }
 

@@ -8,7 +8,8 @@
 import UIKit
 
 class FirstViewController: UIViewController, Storyboarded {
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: FirstScreenCoordinator?
+    var selectedProduct = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
